@@ -1,0 +1,11 @@
+@tailwind components;
+
+@layer components{
+    .container-global{
+        @apply w-[1184px] max-md:w-full m-auto max-md:px-6;
+    }
+
+    .grid-global{
+        @apply md:grid md:grid-cols-12 md:grid-flow-col gap-4 flex;
+    }
+}
