@@ -2,7 +2,7 @@ import React from "react";
 import Card from "@/components/atom/Card";
 import Charger from "@/public/product/charger.jpeg";
 import Headphone from "@/public/product/headphone.png";
-import SmartWatch from "@/public/product/smartwatch.png";
+import SmartWatch from "@/public/product/smartWatch.png";
 import Velador from "@/public/product/veladorSmartP.png";
 
 const products = [
