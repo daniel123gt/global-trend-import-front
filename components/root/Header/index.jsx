@@ -1,15 +1,16 @@
-import Menu from "../Menu"
-import BannerHead from "../BannerHead"
-import React from 'react'
+import Menu from "../Menu";
+import BannerHead from "../BannerHead";
+import React from "react";
+import Navigation from "../Navigation";
 
 export default function Header() {
   return (
-    <header className="fixed w-full z-50">
-      <BannerHead/>
+    <header className="fixed w-full z-50 bg-white">
+      <BannerHead />
       <div className="container-global">
-        <Menu/>
+        <Menu />
       </div>
-      
+      <Navigation />
     </header>
-  )
+  );
 }

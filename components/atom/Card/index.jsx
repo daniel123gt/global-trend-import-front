@@ -1,12 +1,30 @@
 import React from "react";
 import Image from "next/image";
-import Product from "@/public/product/veladorSmart.png";
+import Button from "../Button";
 
-export default function Card() {
+export default function Card({ data }) {
   return (
-    <div className="w-[280px] bg-white rounded-lg">
-      <div>
-        <Image src={Product}></Image>
+    <div className="group w-[280px] bg-white rounded-lg p-2 shadow-md cursor-pointer flex flex-col justify-between">
+      <div className="relative w-full h-[240px]">
+        <Image
+          style={{
+            objectFit: "contain",
+          }}
+          fill
+          src={data.img.src}
+        ></Image>
+      </div>
+      <div className="flex flex-col justify-between">
+        <div className="text-blue-dark p-2">
+          <p className="text-2xl">{data.title}</p>
+          <p className="font-extralight">{data.description}</p>
+        </div>
+        <div className="p-2">
+          <p className="text-2xl text-blue-40">S/ {data.price}</p>
+        </div>
+        <div className="opacity-0 group-hover:opacity-100 transition-all">
+          <Button>Agregar al carrito</Button>
+        </div>
       </div>
     </div>
   );

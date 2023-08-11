@@ -2,7 +2,7 @@
 
 @layer components{
     .container-global{
-        @apply w-[1184px] max-md:w-full m-auto max-md:px-6;
+        @apply w-[1412px] max-md:w-full m-auto max-md:px-6;
     }
 
     .grid-global{
