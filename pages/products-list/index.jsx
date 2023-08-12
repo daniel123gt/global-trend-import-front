@@ -49,6 +49,18 @@ const products = [
 export default function ProductsList() {
   return (
     <div className="w-full">
+      <div className="container-global pb-4 flex justify-between">
+        <h2 className="text-4xl font-light text-blue-dark">
+          Todos los productos
+        </h2>
+        <div>
+          <select className="uppercase text-xl" name="order" id="order">
+            <option value="1">Destacado</option>
+            <option value="2">Precio</option>
+            <option value="3">Nombre</option>
+          </select>
+        </div>
+      </div>
       <div className="grid-global container-global">
         <div className="col-span-2 h-[500px] bg-blue-dark/5"></div>
         <div className="col-span-10 flex justify-between">
