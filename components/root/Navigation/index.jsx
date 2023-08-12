@@ -5,9 +5,9 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navigation() {
   return (
-    <div className="w-full bg-blue-dark/5 py-1">
-      <div className="container-global">
-        <div className="w-[300px]">
+    <div className="w-full bg-blue-dark/5 py-2">
+      <div className="grid-global container-global">
+        <div className="col-span-2">
           <Button>
             <div className="flex justify-center items-center gap-2">
               <FontAwesomeIcon icon={faBars} />
@@ -15,6 +15,7 @@ export default function Navigation() {
             </div>
           </Button>
         </div>
+        <div className="col-span-10"></div>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import Button from "../Button";
 
 export default function Card({ data }) {
   return (
-    <div className="group w-[280px] bg-white rounded-lg p-2 shadow-md cursor-pointer flex flex-col justify-between">
+    <div className="group w-[280px] bg-white rounded-lg p-2 shadow-sm hover:shadow-lg cursor-pointer flex flex-col justify-between">
       <div className="relative w-full h-[240px]">
         <Image
           style={{

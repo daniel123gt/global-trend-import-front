@@ -49,10 +49,13 @@ const products = [
 export default function ProductsList() {
   return (
     <div className="w-full">
-      <div className="flex gap-4 container-global justify-between">
-        {products.map((data, key) => (
-          <Card key={key} data={data} />
-        ))}
+      <div className="grid-global container-global">
+        <div className="col-span-2 h-[500px] bg-blue-dark/5"></div>
+        <div className="col-span-10 flex justify-between">
+          {products.map((data, key) => (
+            <Card key={key} data={data} />
+          ))}
+        </div>
       </div>
     </div>
   );
