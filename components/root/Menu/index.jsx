@@ -1,12 +1,17 @@
-import React from "react";
-import Link from "next/link";
+import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "@/public/logo-full.png";
 import Search from "../Search";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCartShopping,
+  faUser,
+  faMagnifyingGlass,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Menu() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const LINKS_MENU = [
     { name: "Inicio", href: "/" },
     { name: "Categorías", href: "/" },
@@ -21,7 +26,7 @@ export default function Menu() {
   return (
     <div className="flex items-center justify-between py-4">
       <Link href="/">
-        <Image width={320} src={Logo} />
+        <Image width={460} alt="Logo global" src={Logo} loading="lazy" />
       </Link>
       <Search />
       <nav>

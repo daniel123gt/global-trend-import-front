@@ -4,7 +4,7 @@ import Button from "../Button";
 
 export default function Card({ data }) {
   return (
-    <div className="group w-[280px] bg-white rounded-lg p-2 shadow-sm hover:shadow-lg cursor-pointer flex flex-col justify-between">
+    <div className="group w-[280px] bg-white rounded-lg border border-blue-dark/5 hover:border-blue-40/10 transition-all p-2 shadow-sm hover:shadow-md cursor-pointer flex flex-col justify-between">
       <div className="relative w-full h-[240px]">
         <Image
           style={{
@@ -12,6 +12,8 @@ export default function Card({ data }) {
           }}
           fill
           src={data.img.src}
+          alt={data.img.alt}
+          loading="lazy"
         ></Image>
       </div>
       <div className="flex flex-col justify-between">

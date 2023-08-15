@@ -1,8 +1,13 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import Banner from "@/components/atom/Banner";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return <div className="container-global">Aqui va el contenido del Home</div>;
+  return (
+    <div className="">
+      <Banner />
+    </div>
+  );
 }

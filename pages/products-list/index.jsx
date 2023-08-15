@@ -48,21 +48,31 @@ const products = [
 
 export default function ProductsList() {
   return (
-    <div className="w-full">
+    <div className="w-full pt-8">
       <div className="container-global pb-4 flex justify-between">
         <h2 className="text-4xl font-light text-blue-dark">
           Todos los productos
         </h2>
         <div>
-          <select className="uppercase text-xl" name="order" id="order">
-            <option value="1">Destacado</option>
-            <option value="2">Precio</option>
-            <option value="3">Nombre</option>
+          <select
+            className="uppercase text-lg border border-solid border-blue-dark/10 py-1 px-4 rounded-full outline-none focus:border-blue-40 transition-all"
+            name="order"
+            id="order"
+          >
+            <option className="text-lg" value="1">
+              Destacado
+            </option>
+            <option className="text-lg" value="2">
+              Precio
+            </option>
+            <option className="text-lg" value="3">
+              Nombre
+            </option>
           </select>
         </div>
       </div>
       <div className="grid-global container-global">
-        <div className="col-span-2 h-[500px] bg-blue-dark/5"></div>
+        <div className="col-span-2 h-[500px] rounded-lg border border-blue-dark/5 shadow-sm"></div>
         <div className="col-span-10 flex justify-between">
           {products.map((data, key) => (
             <Card key={key} data={data} />

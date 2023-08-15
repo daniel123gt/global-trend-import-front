@@ -4,10 +4,10 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 export default function Search() {
   return (
-    <div className="w-full px-4 ">
+    <div className="w-full px-4">
       <div className="group relative">
         <input
-          className="w-full text-xl text-blue-dark font-light border border-solid border-blue-dark py-2 px-4 rounded-full outline-none focus:border-blue-40"
+          className="w-full text-xl text-blue-dark font-light border border-solid border-blue-dark/10 py-2 px-4 rounded-full outline-none focus:border-blue-40 transition-all"
           type="text"
           placeholder="Buscar en Global Trends Import"
         />
