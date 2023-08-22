@@ -18,33 +18,33 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-40 text-white">
-      <div className="container-global grid-global py-14">
-        <div className="col-span-3 bg-white p-2 rounded-full">
-          <Link className="p-4" href="/">
+    <footer className="bg-gradient-to-br from-blue-40 to-blue-30  text-white w-full">
+      <div className="container-global max-sm:flex flex-col max-sm:gap-4 md:grid-global py-14">
+        <div className="col-span-3 bg-white p-4 rounded-full">
+          <Link className="p-2" href="/">
             <Image loading="lazy" alt="Logo global" width={460} src={Logo} />
           </Link>
         </div>
         <div className="col-span-1"></div>
         <div className="col-span-2">
-          <p className="text-2xl">Soporte</p>
-          <ul>
+          <p className="text-3xl">Soporte</p>
+          <ul className="text-xl">
             <li>Terminos y condiciones</li>
             <li>Metodos de pago</li>
             <li>Envios y entregas</li>
           </ul>
         </div>
         <div className="col-span-2">
-          <p className="text-2xl">Mi Cuenta</p>
-          <ul>
+          <p className="text-3xl">Mi Cuenta</p>
+          <ul className="text-xl">
             <li>Registrarme</li>
             <li>Iniciar Sesion</li>
             <li>Recuperar contraseña</li>
           </ul>
         </div>
         <div className="col-span-2">
-          <p className="text-2xl">Contacto</p>
-          <ul>
+          <p className="text-3xl">Contacto</p>
+          <ul className="text-xl">
             <li>
               <FontAwesomeIcon icon={faLocationDot} /> Av avenida 1111, Lima,
               Lima, Peru.
@@ -62,7 +62,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="col-span-2">
-          <p className="text-2xl">Redes Sociales</p>
+          <p className="text-3xl">Redes Sociales</p>
           <ul className="flex justify-start gap-4 text-3xl">
             <li>
               <FontAwesomeIcon icon={faFacebook} />

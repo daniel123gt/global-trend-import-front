@@ -8,7 +8,7 @@ import Mochilas from "@/public/mochilas.jpeg";
 import SkinCare from "@/public/skincare.jpeg";
 import Velador from "@/public/product/veladorSmartP.png";
 import SmartWatch from "@/public/product/smartWatch.png";
-import Charger from "@/public/product/charger.jpeg";
+import Charger from "@/public/product/charger2.jpeg";
 import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,7 +23,7 @@ const CATEGORIES = [
   { title: "Cargadores", img: Charger },
   { title: "Mochilas", img: Mochilas },
   { title: "SkinCare", img: SkinCare },
-  { title: "Organización", img: Velador },
+  { title: "Muebles", img: Velador },
   { title: "SmartWatch", img: SmartWatch },
 ];
 
@@ -43,7 +43,7 @@ export default function Home() {
         <h2 className="uppercase text-center text-4xl text-blue-dark">
           Explora todo lo que tenemos para ti!
         </h2>
-        <div className="flex justify-center gap-10 py-10">
+        <div className="flex justify-center flex-wrap gap-10 py-10">
           {CATEGORIES.map((item, index) => (
             <Link href="/products-list" key={index}>
               <CategoryCard title={item.title} img={item.img} />

@@ -5,7 +5,7 @@ import Button from "../Button";
 export default function Card({ data }) {
   return (
     <div className="group w-[280px] bg-white rounded-lg border border-blue-dark/5 hover:border-blue-40/10 transition-all p-2 shadow-sm hover:shadow-md cursor-pointer flex flex-col justify-between">
-      <div className="relative w-full h-[240px]">
+      <div className="relative w-full min-h-[240px]">
         <Image
           style={{
             objectFit: "contain",

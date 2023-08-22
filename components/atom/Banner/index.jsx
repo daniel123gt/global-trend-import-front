@@ -4,9 +4,9 @@ import BannerImg from "@/public/banner.png";
 
 export default function Banner() {
   return (
-    <div className="bg-banner-home ">
+    <div className="bg-banner-home">
       <div className="backdrop-blur-[15px]">
-        <div className="h-[598px] container-global">
+        <div className="md:h-[598px] md:container-global">
           <Image
             quality={100}
             width={850}

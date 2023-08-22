@@ -7,8 +7,8 @@ import Link from "next/link";
 
 export default function Navigation() {
   return (
-    <div className="w-full bg-blue-dark/5 py-2">
-      <div className="grid-global container-global">
+    <div className="hidden md:block w-full bg-blue-dark/5 py-2">
+      <div className="md:grid-global container-global">
         <div className="col-span-2">
           <Button>
             <div className="flex justify-center items-center gap-2">

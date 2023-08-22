@@ -76,18 +76,18 @@ export default function ProductsList() {
           </select>
         </div>
       </div>
-      <div className="grid-global container-global">
-        <div className="col-span-2 h-[500px] rounded-lg border border-blue-dark/5 shadow-sm p-4 text-blue-dark font-light">
+      <div className="max-sm:flex flex-col md:grid-global gap-4 container-global">
+        <div className="col-span-2 rounded-lg border border-blue-dark/5 shadow-sm p-4 text-blue-dark font-light">
           <p className="pb-4">Resultados (4)</p>
           <hr />
-          <div className="text-2xl text-blue-dark pt-4 flex flex-col gap-4">
+          <div className="text-2xl text-blue-dark pt-4 flex flex-col gap-4 flex-wrap">
             <p>Categoría</p>
             <p>Marca</p>
             <p>Precio</p>
             <p>Características</p>
           </div>
         </div>
-        <div className="col-span-10 flex justify-between">
+        <div className="col-span-10 flex items-stretch justify-center gap-4 md:justify-between flex-wrap">
           {products.map((data, key) => (
             <Link href={`/product/${data.id}`} key={key}>
               <Card data={data} />

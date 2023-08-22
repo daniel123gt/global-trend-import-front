@@ -26,10 +26,10 @@ export default function Menu() {
   return (
     <div className="flex items-center justify-between py-4">
       <Link href="/">
-        <Image width={460} alt="Logo global" src={Logo} loading="lazy" />
+        <Image width={400} alt="Logo global" src={Logo} loading="lazy" />
       </Link>
       <Search />
-      <nav>
+      <nav className="hidden md:block">
         <ul className="font-teko text-blue-dark font-light text-2xl flex justify-between gap-4">
           {MENU_ACCTIONS.map((link, key) => (
             <li
