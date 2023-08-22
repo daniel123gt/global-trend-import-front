@@ -4,9 +4,11 @@ import Charger from "@/public/product/charger.jpeg";
 import Headphone from "@/public/product/headphone.png";
 import SmartWatch from "@/public/product/smartWatch.png";
 import Velador from "@/public/product/veladorSmartP.png";
+import Link from "next/link";
 
 const products = [
   {
+    id: 1,
     img: {
       src: Charger,
       alt: "Cargador",
@@ -16,6 +18,7 @@ const products = [
     price: "50",
   },
   {
+    id: 2,
     img: {
       src: Headphone,
       alt: "Audifonos",
@@ -26,6 +29,7 @@ const products = [
     price: "100",
   },
   {
+    id: 3,
     img: {
       src: SmartWatch,
       alt: "Reloj inteligente",
@@ -36,6 +40,7 @@ const products = [
     price: "80",
   },
   {
+    id: 4,
     img: {
       src: Velador,
       alt: "Velador",
@@ -72,10 +77,21 @@ export default function ProductsList() {
         </div>
       </div>
       <div className="grid-global container-global">
-        <div className="col-span-2 h-[500px] rounded-lg border border-blue-dark/5 shadow-sm"></div>
+        <div className="col-span-2 h-[500px] rounded-lg border border-blue-dark/5 shadow-sm p-4 text-blue-dark font-light">
+          <p className="pb-4">Resultados (4)</p>
+          <hr />
+          <div className="text-2xl text-blue-dark pt-4 flex flex-col gap-4">
+            <p>Categoría</p>
+            <p>Marca</p>
+            <p>Precio</p>
+            <p>Características</p>
+          </div>
+        </div>
         <div className="col-span-10 flex justify-between">
           {products.map((data, key) => (
-            <Card key={key} data={data} />
+            <Link href={`/product/${data.id}`} key={key}>
+              <Card data={data} />
+            </Link>
           ))}
         </div>
       </div>

@@ -19,7 +19,7 @@ export default function Navigation() {
         </div>
         <div className="col-span-10 flex items-center">
           <Link
-            href="products-list"
+            href="/products-list"
             className="group text-2xl font-light text-blue-dark hover:text-blue-40 pl-8"
           >
             <FontAwesomeIcon
