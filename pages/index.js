@@ -7,7 +7,7 @@ import Audio from "@/public/audio.webp";
 import Mochilas from "@/public/mochilas.jpeg";
 import SkinCare from "@/public/skincare.jpeg";
 import Velador from "@/public/product/veladorSmartP.png";
-import SmartWatch from "@/public/product/SmartWatch.png";
+import SmartWatch from "@/public/product/smartWatch.png";
 import Charger from "@/public/product/charger.jpeg";
 
 const inter = Inter({ subsets: ["latin"] });
