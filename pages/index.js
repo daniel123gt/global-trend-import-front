@@ -9,6 +9,7 @@ import SkinCare from "@/public/skincare.jpeg";
 import Velador from "@/public/product/veladorSmartP.png";
 import SmartWatch from "@/public/product/smartWatch.png";
 import Charger from "@/public/product/charger.jpeg";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,7 +45,9 @@ export default function Home() {
         </h2>
         <div className="flex justify-center gap-10 py-10">
           {CATEGORIES.map((item, index) => (
-            <CategoryCard title={item.title} img={item.img} key={index} />
+            <Link href="/products-list" key={index}>
+              <CategoryCard title={item.title} img={item.img} />
+            </Link>
           ))}
         </div>
       </div>
